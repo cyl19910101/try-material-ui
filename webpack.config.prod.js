@@ -8,6 +8,7 @@ module.exports = {
     path: buildPath,
     filename: "[name].[chunkhash].js"
   },
+  devtool: "source-map",
   module: {
     rules: [
       {
@@ -26,7 +27,7 @@ module.exports = {
   plugins: [
     new HTMLPlugin({
       template: indexHTML,
-      inject: !!0
+      inject: !!1
     })
   ]
 };
